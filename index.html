@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Hello World</title>
+</head>
+
+<body>
+    <section id="helloWorld">
+        <h1>Hello World</h1>
+        <div class="helloWorldText">
+            <p>China is speeding up strategic pian.stangdards,traffic rules.laws and regulations</p>
+            <p>on accident-incurred liabilities for its smart car industry.Economic Information</p>
+            <p>Daily reported Thursday.</p>
+        </div>
+        <div class="signUp">
+            <h5 class="create">CREATE YOUR ACCOUNT</h4>
+                <P>IT IS ABSOLUTELY FREE</P>
+                <div class="signUpBox">
+                    <input type="email" value="denis@getcraftwork.com">
+                    <input type="password" placeholder="Create you password">
+                    <input type="button" value="SIGN UP">
+                </div>
+        </div>
+    </section>
+    <section id="readyMade">
+        <h2>BOATLOADS OF AWESOME</h2>
+        <p class="readyMadeText">Ready-made,customizable,HTML<br>landing page sections</p>
+        <section class="iconText">
+            <div class="someone" v-for="item in list">
+                <div class="someoneIcon"
+                    :style="{'background-image':'url('+item.iconUrl+')','background-repeat':'no-repeat','background-position':'top center'}">
+                </div>
+                <div class="someoneText">
+                    <h4>{{item.title}}</h4>
+                    <p>{{item.text}}</p>
+                </div>
+            </div>
+        </section>
+    </section>
+    <section class="supportive">
+        <div class="supportiveLeft">
+            <h2>Supportive policies for China's smart car</h2>
+            <p>China will come up with its own smart car standards,traffic ruies. laws and regulations relating to
+                safety.according to the China industry Innovation Alliance for the Intelli-gent and Connected Vehicles.
+            </p>
+            <div class="supportiveBtn">
+                <input type="button" value="CHECK OUT FEATURES" class="active">
+                <input type="button" value="TRY PRODUCT FOR FREE">
+            </div>
+        </div>
+        <div class="supportiveRight">
+            <h1>资料</h1>
+            <article>这里有一些教程、文档或示例，可以帮助你学习</article>
+            <section class="jiaocheng">
+                <div class="jiaochengBox" v-for="item in list">
+                    <img :src="item.imgUrl" alt="">
+                    <h3>{{item.title}}</h3>
+                    <p class="jiaochengBoxText">{{item.text}}</p>
+                </div>
+            </section>
+        </div>
+    </section>
+    <section class="products">
+        <h1>Try Our Awesome Products</h1>
+        <div class="productsText">
+            <div class="productTextBox" v-for="item in list">
+                <img :src="item.fontImgUrl" alt="">
+                <p>{{item.text}}</p>
+            </div>
+        </div>
+    </section>
+    <section class="learn">
+        <div class="top">
+            <img src="images/03.jpg" alt="">
+            <div class="learnText">
+                <h2>Learn How to Improve Your Personal Business</h2>
+                <p>Li Jun, a China Academy of Engineering academician and also director of the alliance's experts'
+                    committee, said that China will also launch design guidance for smart cars, smart map architecture
+                    and standards for test grounds.</p>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="learnText">
+                <h2>Choose Between Two Beautifully Designed Color Schemes.</h2>
+                <p>China will come up with its own smart car standards, traffic rules, laws and regulations relating to
+                    safety, according to the China Industry Innovation Alliance for the Intelligent and Connected
+                    Vehicles.</p>
+            </div>
+            <img src="images/04.jpg" alt="">
+        </div>
+    </section>
+    <section class="awesome">
+        <div class="awesomeText">
+            <h1>Our Awesome Crew</h1>
+            <p>Our unique online teaching style makes learning easy for everyone. Whether you <br> are trying to land a
+                new job, brush up on your skills.</p>
+        </div>
+        <div class="awesomeImg">
+            <div class="renwu" v-for="item in list" :style="{'background-image':'url('+item.url+')'}">
+                <div class="menban hide">
+                    <h1>{{item.title}}</h1>
+                    <p>{{item.text}}</p>
+                    <div class="appIcon">
+                        <a href="#"><img src="images/appicon-1.jpg" alt=""></a>
+                        <a href="#"><img src="images/appicon-2.jpg" alt=""></a>
+                        <a href="#"><img src="images/appicon-3.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contacts">
+        <div class="contactsContain">
+            <div class="emailBox">
+                <p>FELL FREE TO WRITE US</p>
+                <input type="email" placeholder="E-mail">
+                <input type="text" placeholder="Subject">
+                <textarea cols="30" rows="10" placeholder="Message"></textarea>
+                <input type="button" value="SEND">
+            </div>
+            <div class="contactBox">
+                <h1>Contacts</h1>
+                <p>Make any design your own using the Style Editor. Personalize fonts, colors, and layouts to create the
+                    custom look you want.</p>
+                <div class="iconBox">
+                    <img src="images/5.jpg" alt="">
+                    <p>360 King Street<br>Feastrale Trevose. PA 19057</p>
+                </div>
+                <div class="iconBox">
+                    <img src="images/6.jpg" alt="">
+                    <p>(755) 564-84-12</p>
+                </div>
+                <div class="iconBox">
+                    <img src="images/7.jpg" alt="">
+                    <p>youname@mail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footerC">
+            <form>
+                <div class="formBox">
+                    <dt>LEARN MORE</dt>
+                    <dd><a href="#">How it works?</a></dd>
+                    <dd><a href="#">Meeting tools</a></dd>
+                    <dd><a href="#">Live streaming</a></dd>
+                    <dd><a href="#">Contact method</a></dd>
+                </div>
+                <div class="formBox">
+                    <dt>ABOUT US</dt>
+                    <dd><a href="#">About us</a></dd>
+                    <dd><a href="#">Features</a></dd>
+                    <dd><a href="#">Privacy police</a></dd>
+                    <dd><a href="#">Terms & Conditions</a></dd>
+                </div>
+                <div class="formBox">
+                    <dt>SUPPORT</dt>
+                    <dd><a href="#">FAQ</a></dd>
+                    <dd><a href="#">Contact us</a></dd>
+                    <dd><a href="#">Live chat</a></dd>
+                    <dd><a href="#">Phone call</a></dd>
+                </div>
+            </form>
+            <div class="enjoy">
+                <h2>ENJOY YOUR LIFE</h2>
+                <p>Great web UI kit for designers, <br> freelancers or business.</p>
+                <div class="enjoyIcon">
+                    <a href="#"><img src="images/8.jpg" alt=""></a>
+                    <a href="#"><img src="images/9.jpg" alt=""></a>
+                    <a href="#"><img src="images/10.jpg" alt=""></a>
+                    <a href="#"><img src="images/11.jpg" alt=""></a>
+                    <a href="#"><img src="images/12.jpg" alt=""></a>
+                    <a href="#"><img src="images/13.jpg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="js/vue.js"></script>
+<script src="js/jquery-3.4.1.js"></script>
+<script src="js/index.js"></script>
+
+</html>
